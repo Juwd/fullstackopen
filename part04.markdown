@@ -9,6 +9,7 @@ sequenceDiagram
     activate server
     Note over server,browser: New data added to server
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    server-->>browser: the page
     deactivate server
     Note over server,browser: Call's webpage and reloads with new data
     
